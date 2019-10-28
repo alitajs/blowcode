@@ -1,0 +1,20 @@
+{
+  "name": "blowcode",
+  "version": "1.0.0",
+  "description": "之前我就做过类似的，antd 团队也有一个很好的项目，专门做这个，只是后面好像没有维护了。",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alitajs/blowcode.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alitajs/blowcode/issues"
+  },
+  "homepage": "https://github.com/alitajs/blowcode#readme"
+}
