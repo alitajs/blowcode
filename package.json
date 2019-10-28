@@ -1,20 +1,26 @@
 {
-  "name": "blowcode",
-  "version": "1.0.0",
-  "description": "之前我就做过类似的，antd 团队也有一个很好的项目，专门做这个，只是后面好像没有维护了。",
-  "main": "index.js",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "bootstrap": "lerna bootstrap",
+    "build": "father-build",
+    "clean": "lerna clean -y",
+    "start": "cross-env PAGES_PATH='landing/src/pages' umi dev"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/alitajs/blowcode.git"
+  "lint-staged": {
+    "**/*.{js,jsx,tsx,ts,less,json}": [
+      "prettier --write",
+      "git add"
+    ]
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/alitajs/blowcode/issues"
-  },
-  "homepage": "https://github.com/alitajs/blowcode#readme"
+  "devDependencies": {
+    "antd": "^4.0.0-alpha.0",
+    "cross-env": "^6.0.3",
+    "father-build": "^1.14.0",
+    "lerna": "3.18.3",
+    "np": "^5.0.3",
+    "shelljs": "0.8.3",
+    "umi": "^2.9.0",
+    "umi-plugin-react": "^1.12.8",
+    "umi-types": "^0.4.0-beta.4"
+  }
 }
